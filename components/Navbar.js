@@ -2,12 +2,18 @@ import React, { Fragment, useState } from 'react'
 import Link from 'next/link';
 const Navbar = () => {
   const [isHovering,setIshovering]=useState(false);
-
+  const[isTvHovering,setIsTvHovering]=useState(false);
   const handleMouseOver=()=>{
     setIshovering(true);
   }
   const handleMouseOut=()=>{
      setIshovering(false);
+  }
+  const handleTvHover=()=>{
+    setIsTvHovering(true);
+  }
+  const handleTvMouseOut=()=>{
+    setIsTvHovering(false);
   }
   return (
     <Fragment>
@@ -21,8 +27,8 @@ const Navbar = () => {
                    <div className='moviesLink' onMouseOver={handleMouseOver}>
                    <Link href="/movie" className='links'>Movies</Link>
                    </div>
-                   <div className='moviesLink'>
-                   <Link href="/" className='links'>Tv Shows</Link>
+                   <div className='moviesLink' onMouseOver={handleTvHover} >
+                   <Link href="/tv" className='links'>Tv Shows</Link>
                    </div>
                    <div className='moviesLink'>
                    <Link href="/" className='links'>People</Link>
@@ -47,6 +53,15 @@ const Navbar = () => {
                 <div className='nav-link-3'><Link className='link' href="/movie/UpComing">UpComing</Link></div>
                 <div className='nav-link-4'><Link className='link' href="/movie/TopRated">Top rated</Link></div>
              </div>
+           )}
+           {isTvHovering&& (
+              <div className='tvSubNavigation'>
+              <div className='close' onClick={handleTvMouseOut} ><i className="ri-close-fill"></i></div>
+                   <div className='nav-link-1'><Link className='link' href="/tv">Popular</Link></div>
+                   <div className='nav-link-2'><Link className='link' href="/tv/AiringToday">Airing Today</Link></div>
+                   <div className='nav-link-3'><Link className='link' href="/tv/OnTv">On Tv</Link></div>
+                   <div className='nav-link-4'><Link className='link' href="/tv/TopRated">Top rated</Link></div>
+              </div>
            )}
            
         </div>

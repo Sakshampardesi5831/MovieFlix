@@ -85,7 +85,7 @@
 }
 .moviesCard-section{
     width: 20%;
-    height: 55vh;
+    min-height: 55vh;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -259,7 +259,7 @@
     height: 17vw;
     position: absolute;
     top: 80%;
-    left:20%;
+    left:10%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -311,6 +311,23 @@
 }
 .close:hover{
     background-color: #eee;
+}
+/*--------------------------------------TV SECTION------------------------------------------------*/
+.tvSubNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 17vw;
+    position: absolute;
+    top: 80%;
+    left:30%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    padding: 0 1vw;
 }
 /*-----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------*/
@@ -587,3 +604,43 @@
     border-radius: 100px;
 }
 /*------------------------------------------------------------------------------------------------------*/
+.AllCard_Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+}
+.AllCard_Container-Card{
+    width: 22%;
+    min-height: 55vh;
+    margin-top: 1vw;
+    border-radius: 15px;
+}
+.AllCard_Container-Card_img{
+    width: 100%;
+    height: 48vh;
+    border-radius: 15px;
+    margin-bottom: 1vw;
+
+}
+.AllCard_Container-Card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+.AllCard_Container-Card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    color: black;
+}
+.AllCard_Links{
+    text-decoration: none;
+}
