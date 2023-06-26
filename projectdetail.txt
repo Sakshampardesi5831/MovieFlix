@@ -11,3 +11,19 @@ https://developers.themoviedb.org/3/movies/get-movie-details
 
 image paths
 https://image.tmdb.org/t/p/w500/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg
+
+
+// <Fragment>
+//   <Navbar/>
+//   <div  className='frontPage_Container'>
+//      <div className='frontPage_Container-Wrapper'>
+//         <div className='frontPage_Container_Wrapper-heading'>
+//             <h2>Trending</h2>
+//             <div className='frontPage_Container_Wrapper_heading-buttonWrapper'>
+//                 <h3>today</h3>
+//                 <h3>this Week</h3>
+//             </div>
+//         </div>
+//      </div>
+//   </div>
+// </Fragment>

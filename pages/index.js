@@ -13,8 +13,8 @@ const index = () => {
   useEffect(()=>{
     GetLatestMovies();
   },[])
-  return (
-    <Fragment>
+  return  (
+        <Fragment>
      <div className='main-box'>
         <Navbar/>
         <div className='movies-section'>
@@ -35,7 +35,9 @@ const index = () => {
         </div>
      </div>
     </Fragment>
-  )
+    )
+   
+   
 }
 
 export default index
